@@ -1,0 +1,90 @@
+/*очищаем все стили браузера*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box; 
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0, border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+body{
+    padding: 30px;
+    background: url('/img/bg.jpg')  0 0/100% auto  fixed;/*прокучивется страница а фон остается*/
+
+}
+.block{
+    background: url('/img/bg_repeat.jpg');
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+
+}
+
+.block2{
+/* Old browsers */
+background: rgb(236,232,157);
+/* FF3.6-15 */
+background: -moz-linear-gradient(top, rgb(199, 196, 146) 0%, rgb(65, 13, 163) 50%, rgba(24,181,164,1) 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: -webkit-linear-gradient(top, rgba(236,232,157,1) 0%,rgba(94,83,115,1) 50%,rgba(24,181,164,1) 100%);
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: linear-gradient(to bottom, rgb(85, 131, 216) 0%,rgb(150, 133, 182) 50%,rgba(24,181,164,1) 100%);
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+
+}
+
+.block3{
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+    background: url('/img/avatar_2.jpg') 50% no-repeat;
+}
+.block4{
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+    background: url('/img/avatar.jpg') 0 0/50px no-repeat, url('/img/avatar_2.jpg') 100% 100%/50px no-repeat, url('/img/avatar_3.jpg') 50% no-repeat, url('/img/bg.jpg') 50%/cover no-repeat;
+    /*можно задать 4 картинки для бэкграунда*/
+}
+
+.list{
+    margin: 0 0 50px 0;
+}
+
+.list li{
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    background: url('/img/icons/li.svg') left 5px no-repeat;
+    padding-left: 25px;
+}
